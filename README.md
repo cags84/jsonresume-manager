@@ -215,5 +215,11 @@ Instalamos dependencias con npm
 
 Realizamos el PASO 7 nuevamente.
 
+# PASO 9 - Ejecutamos la migración
 
+```sh
+> sail php artisan migrate
+```
+
+Procedemos a crear un usuario y hacer login para ingresar como usuarios registrados en la aplicación.
 
