@@ -4,7 +4,24 @@ Este proyecto es una práctica del curso de Antonio Sarosi en Mastermind, la cua
 
 ** Nota: Para el soporte de Docker, voy a utilizar el proyecto Laravel Sail el cual esta desarrollado por los mismos de Laravel y simplifica la configuración de docker para poder trabajar con Laravel.
 
-## PASO 1 - Crear proyecto Laravel y subirlo al repo como primer commit.
+## Clonar el proyecto
+
+Para trabajar con el proyecto, solo se debe clonar de la siguiente manera.
+
+```sh
+> git clone https://github.com/cags84/jsonresume-manager
+> cd jsonresume-manager
+```
+
+Ahora ejecutamos los comandos para que las herramientas se seteen correctamente, no olvidar que paso 5 comento que hay cambios que se tienen que hacer cada vez que se clona o se comienza el proyecto.
+
+
+
+## Documentación del desarrollo del proyecto
+
+De aquí en adelante son notas que tome cuando estaba desarrollando el proyecto.
+
+### PASO 1 - Crear proyecto Laravel y subirlo al repo como primer commit.
 
 En este paso creamos un proyecto nuevo con el siguiente comando.
 
@@ -13,7 +30,7 @@ En este paso creamos un proyecto nuevo con el siguiente comando.
 > cd jsonresume-manager
 ```
 
-## PASO 2 - Subimos el primer commit a github
+### PASO 2 - Subimos el primer commit a github
 
 ```sh
 > git init
@@ -22,7 +39,7 @@ En este paso creamos un proyecto nuevo con el siguiente comando.
 > git push -u origin master
 ```
 
-## PASO 3 - Creamos una rama develop para trabajar con gitflow
+### PASO 3 - Creamos una rama develop para trabajar con gitflow
 
 Aquí es importante no olvidar setear github para que la rama principal donde se reciban los commits sea develop y que solo cuando se apruben los pull request se pueda hacer un merge contra la rama main.
 
@@ -31,7 +48,7 @@ Aquí es importante no olvidar setear github para que la rama principal donde se
 > git push -u origin develop
 ```
 
-## PASO 4 - Comando utiles para git
+### PASO 4 - Comando utiles para git
 
 Comandos utiles que se utilizan a lo largo del desarrollo de la aplicación.
 
@@ -42,7 +59,7 @@ Comandos utiles que se utilizan a lo largo del desarrollo de la aplicación.
 > git branch -D name_branch
 ```
 
-## PASO 5 - Instalar como dependencia de desarrollo laravel sail e inicializarlo.
+### PASO 5 - Instalar como dependencia de desarrollo laravel sail e inicializarlo.
 
 Para ello y siguiendo las recomendaciones de gitflow, creamos una rama nueva donde incluiremos los cambios para despues mergearlos con la rama develop.
 
@@ -156,7 +173,7 @@ Recargamos para que tome los cambios
 
 Y con ello ya tenemos el comando `sail` disponible para trabajar con el proyecto.
 
-## PASO 6 - Inicializamos docker
+### PASO 6 - Inicializamos docker
 
 Para ello ejecutamos en la terminal, en el directorio raiz el siguiente comando y esperamos a que se construyan las imagenes y levante todo para poder trabajar con ello.
 
@@ -168,7 +185,7 @@ NOTA: Recordar que ahora para poder ejecutar cualquier comando dentro de los con
 
 Con esto tenemos listo el entorno para poder empezar a trabajar.
 
-## PASO 7 - Subimos cambios a github
+### PASO 7 - Subimos cambios a github
 
 Con la rama creada y hacemos pull request para hacer merge con develop.
 
