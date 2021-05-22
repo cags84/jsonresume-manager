@@ -107,7 +107,7 @@ Por:
 Tambien modifico esta:
 - '${APP_PORT:-80}:80'
 Por (Colocamos el puerto 84, dado que tengo ocupado el 80 con apache2):
-- '${APP_PORT:-84}:80'
+- 84:80
 ```
 
 Ahora nos queda editar el archivo que esta en la siguiente ruta.
