@@ -9,7 +9,7 @@ services:
                 WWWGROUP: '${WWWGROUP}'
         image: sail-7.4/app
         ports:
-            - '${APP_PORT:-84}:80'
+            - 84:80
         environment:
             WWWUSER: '${WWWUSER}'
             LARAVEL_SAIL: 1
