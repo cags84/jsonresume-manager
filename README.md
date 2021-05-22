@@ -178,7 +178,7 @@ Con la rama creada y hacemos pull request para hacer merge con develop.
 > git push -u origin feature-laravel-sail
 ```
 
-Una vez se realiz el proceso de merge es importante eliminar la rama creada para ese caso y actualizar todo el repo.
+Una vez se realiza el proceso de merge es importante eliminar la rama creada para ese caso y actualizar todo el repo.
 ```sh
 > git checkout develop
 > git fetch --all
@@ -186,5 +186,34 @@ Una vez se realiz el proceso de merge es importante eliminar la rama creada para
 > git fetch --prune
 > git branch -D feature-laravel-sail
 ```
+
+# PASO 8 - Creamos el scaffolding para la autenticación con vue
+
+Para ello dentro del la raiz del proyecto ejecutamos los siguientes comandos:
+
+Antes creamos la rama sobre la que vamos a trabajar
+
+```sh
+> cd jsonresume-manager
+> git checkout -b feature-laravel-ui
+```
+
+Instalamos y creamos el scaffolding
+
+```sh
+> sail composer require laravel/ui
+> sail php artisan ui vue --auth
+```
+
+Instalamos dependencias con npm
+
+```sh
+> sail npm install
+> sail npm run dev
+> sail npm run watch
+```
+
+Realizamos el PASO 7 nuevamente.
+
 
 
