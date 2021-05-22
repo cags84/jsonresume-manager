@@ -167,3 +167,24 @@ NOTA: Recordar que ahora para poder ejecutar cualquier comando dentro de los con
 ```
 
 Con esto tenemos listo el entorno para poder empezar a trabajar.
+
+## PASO 7 - Subimos cambios a github
+
+Con la rama creada y hacemos pull request para hacer merge con develop.
+
+```sh
+> git add .
+> git commit -m "add laravel sail to support docker"
+> git push -u origin feature-laravel-sail
+```
+
+Una vez se realiz el proceso de merge es importante eliminar la rama creada para ese caso y actualizar todo el repo.
+```sh
+> git checkout develop
+> git fetch --all
+> git pull --all
+> git fetch --prune
+> git branch -D feature-laravel-sail
+```
+
+
